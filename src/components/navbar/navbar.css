@@ -1,0 +1,52 @@
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-inline: 40px;
+}
+
+.navbar h1 {
+	border: 2px solid black;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.navbar h1 span {
+	background-color: black;
+	color: white;
+	padding-inline: 10px;
+	border-radius: 5px;
+}
+
+.navbar button {
+	padding-inline: 30px;
+	padding-block: 15px;
+	border: none;
+	background-color: black;
+	color: white;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.pop-up {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.564);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-attachment: fixed;
+	z-index: 1000;
+	scroll-behavior: none;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+@media screen and (max-width: 425px) {
+	.navbar {
+		justify-content: center;
+		align-items: center;
+		gap: 5px;
+		padding-inline: 5px;
+	}
+}
